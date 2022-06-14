@@ -78,7 +78,7 @@
 }
 
 .header {
-  background-color: #262936;
+  background-color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
   left: 0;
@@ -101,6 +101,7 @@
 }
 
 .right {
+  color:#444;
   height: 100%;
   display: flex;
   align-items: center;
@@ -113,7 +114,7 @@
   cursor: pointer;
   text-align: center;
   padding: 5px;
-  color: #fff;
+  color: rgb(43, 0, 129);
   font-weight: 600;
 }
 
@@ -284,7 +285,7 @@
 
 .listingTypeLabel {
   display: inline-block;
-  background-color: #262936;
+  background-color: #ffffff;
   padding: 10px 20px;
   font-size: 16px;
   border: 2px solid #444;

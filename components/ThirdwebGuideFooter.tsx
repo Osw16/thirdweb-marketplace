@@ -29,7 +29,7 @@ export default function ThirdwebGuideFooter() {
         }}
       >
         <img
-          src={"/github.png"}
+          src={""}
           alt="github url"
           width={40}
           height={40}

@@ -7,17 +7,16 @@ import ThirdwebGuideFooter from "../components/ThirdwebGuideFooter";
 import Header from "../components/Header";
 
 // This is the chainId your dApp will work on.
-const activeChainId = ChainId.Rinkeby;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider desiredChainId={activeChainId}>
+    <ThirdwebProvider desiredChainId={ChainId.Mumbai}>
       <Head>
-        <title>thirdweb Marketplace with Next.JS</title>
+        <title>Teilur NFT Marketplace </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Learn How To Use Thirdweb's Marketplace with Next.JS To List Your NFTs For Sale, Accept Bids, and Buy NFTs"
+          content="Marketplace with Next.JS To List Your NFTs For Sale, Accept Bids, and Buy NFTs"
         />
         <meta
           name="keywords"

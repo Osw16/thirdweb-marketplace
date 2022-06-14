@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css";
 export default function Header() {
   // Helpful thirdweb hooks to connect and manage the wallet from metamask.
   const address = useAddress();
+  console.log(address)
   const connectWithMetamask = useMetamask();
   const disconnectWallet = useDisconnect();
 
