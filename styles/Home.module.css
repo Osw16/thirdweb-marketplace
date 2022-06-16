@@ -90,6 +90,34 @@
   align-items: center;
   justify-content: space-between;
 }
+.footer {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  border:1px solid lime;
+  padding-top:50px
+}
+.footer_container {
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 10px 100px;
+}
+.footer_left,.footer_center,.footer_right,.footer_bottom {
+
+  padding:10px;
+
+}
+div .footer_right ul{
+  list-style-type: none;
+  text-align: left;
+  padding:0
+}
+
+.footer_post{
+  display:flex;
+}
+
 
 .left {
   height: 100%;
