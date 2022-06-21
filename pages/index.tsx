@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
   // Connect your marketplace smart contract here (replace this address)
   const marketplace = useMarketplace(
-    "0x7D5526b94891cA618335cE0dc545Aaff8f61289D" // Your marketplace contract address here
+    "0xA26D17927eADE00BB36d45476e528c49470c6C23" // Your marketplace contract address here
   );
 
   const { data: listings, isLoading: loadingListings } =
@@ -31,6 +31,7 @@ const Home: NextPage = () => {
               <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-chain-100-2.png" alt="IMG" />
               <div className={styles.info_categorie}>
                 <h3>BLOCKCHAIN</h3>
+                <div className={styles.barHover}></div>
                 <p>0 Products</p>
               </div>
             </div>
@@ -39,7 +40,9 @@ const Home: NextPage = () => {
             <div className="box_categorie">
               <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-base-de-datos-100-2.png" alt="IMG" />
               <div className={styles.info_categorie}>
-                <h3>DATA</h3>
+              <h3>DATA</h3>
+              <div className={styles.barHover}></div>
+
               <p>0 Products</p>
               </div>
             </div>
@@ -49,6 +52,7 @@ const Home: NextPage = () => {
               <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-marketing-96-3.png" alt="IMG" />
               <div className={styles.info_categorie}>
                 <h3>MARKETING</h3>
+                <div className={styles.barHover}></div>
               <p>0 Products</p>
               </div>
             </div>
@@ -58,6 +62,7 @@ const Home: NextPage = () => {
               <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-puzle-100-3.png" alt="IMG" />
               <div className={styles.info_categorie}>
                 <h3>DESIGN</h3>
+                <div className={styles.barHover}></div>
               <p>0 Products</p>
               </div>
             </div>
@@ -67,10 +72,12 @@ const Home: NextPage = () => {
               <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-python-100-2.png" alt="IMG" />
               <div className={styles.info_categorie}>
                 <h3>SOFTWARE</h3>
+                <div className={styles.barHover}></div>
               <p>0 Products</p>
               </div>
             </div>
           </div>
+        </div>
         </div>
       {/* <p className={styles.explain}>
           Build an NFT marketplace using{" "}
@@ -98,7 +105,45 @@ const Home: NextPage = () => {
           </Link>
         </div> */}
 
-        <div className="main">
+        <div className={styles.main}>
+          <div className={styles.filters}>
+            <div className={styles.filter_status}>
+              <h3>FILTER BY STATUS</h3>
+              <div className={styles.box_status}>
+                <div className={styles.circle}>
+                  <div className={styles.box_circle}>
+
+                  </div>
+                  <p>Recruting</p>
+                </div>
+                <div className={styles.quantity}>
+
+                </div>
+              </div>
+            </div>
+            <div className={styles.filter_country}>
+              <h3>FILTER BY COUNTRY</h3>
+                <div className={styles.box_country}>
+                  <select>
+                    <option value="Any Country" key=""></option>
+                  </select>
+                </div>
+            </div>
+            <div className={styles.filter_vertical}>
+              <h3>FILTER BY VERTICAL</h3>
+                <div className={styles.box_vertical}>
+                  <div className={styles.icon}>
+                    <div className={styles.box_icon}>
+
+                    </div>
+                    <p>Recruting</p>
+                  </div>
+                  <div className={styles.quantity}>
+
+                  </div>
+                </div>
+            </div>
+          </div>
           {
             // If the listings are loading, show a loading message
             loadingListings ? (
@@ -137,7 +182,6 @@ const Home: NextPage = () => {
             )
           }
         </div>
-      </div>
     </>
   );
 };
