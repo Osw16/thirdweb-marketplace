@@ -117,15 +117,15 @@ const Home: NextPage = () => {
                   <p>Recruting</p>
                 </div>
                 <div className={styles.quantity}>
-
+                  1
                 </div>
               </div>
             </div>
             <div className={styles.filter_country}>
               <h3>FILTER BY COUNTRY</h3>
                 <div className={styles.box_country}>
-                  <select>
-                    <option value="Any Country" key=""></option>
+                  <select value="Any Country">
+                    <option value="Any Country" key="">Any Country</option>
                   </select>
                 </div>
             </div>
@@ -134,12 +134,12 @@ const Home: NextPage = () => {
                 <div className={styles.box_vertical}>
                   <div className={styles.icon}>
                     <div className={styles.box_icon}>
-
+                    <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-python-100-2.png" alt="IMG" />
                     </div>
                     <p>Recruting</p>
                   </div>
                   <div className={styles.quantity}>
-
+                    1
                   </div>
                 </div>
             </div>
@@ -157,25 +157,29 @@ const Home: NextPage = () => {
                     className={styles.listingShortView}
                     onClick={() => router.push(`/listing/${listing.id}`)}
                   >
+                    <div className={styles.img_card}>
                     <MediaRenderer
                       src={listing.asset.image}
-                      style={{
-                        borderRadius: 16,
-                        // Fit the image to the container
-                        width: "100%",
-                        height: "100%",
-                      }}
+                      // style={{
+                      //   borderRadius: 16,
+                      //   // Fit the image to the container
+                      //   width: "80%",
+                      //   height: "80%",
+                      // }}
                     />
-                    <h2 className={styles.nameContainer}>
-                      <Link href={`/listing/${listing.id}`}>
-                        <a className={styles.name}>{listing.asset.name}</a>
-                      </Link>
-                    </h2>
+                    </div>
+                    <div className={styles.description_card}>
+                      <h2 className={styles.nameContainer}>
+                        <Link href={`/listing/${listing.id}`}>
+                          <a className={styles.name}>{listing.asset.name}</a>
+                        </Link>
+                      </h2>
 
-                    <p>
-                      <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
-                      {listing.buyoutCurrencyValuePerToken.symbol}
-                    </p>
+                      <p>
+                        <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
+                        {listing.buyoutCurrencyValuePerToken.symbol}
+                      </p>
+                    </div>
                   </div>
                 ))}
               </div>
