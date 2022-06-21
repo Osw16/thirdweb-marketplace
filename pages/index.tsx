@@ -25,7 +25,54 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         {/* Top Section */}
         <h1 className={styles.h1}>Explore our NFTs</h1>
-       {/* <p className={styles.explain}>
+        <div className={styles.categories}>
+          <div className={styles.categoria_item1}>
+            <div className="box_categorie">
+              <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-chain-100-2.png" alt="IMG" />
+              <div className={styles.info_categorie}>
+                <h3>BLOCKCHAIN</h3>
+                <p>0 Products</p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.categoria_item2}>
+            <div className="box_categorie">
+              <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-base-de-datos-100-2.png" alt="IMG" />
+              <div className={styles.info_categorie}>
+                <h3>DATA</h3>
+              <p>0 Products</p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.categoria_item3}>
+            <div className="box_categorie">
+              <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-marketing-96-3.png" alt="IMG" />
+              <div className={styles.info_categorie}>
+                <h3>MARKETING</h3>
+              <p>0 Products</p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.categoria_item4}>
+            <div className="box_categorie">
+              <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-puzle-100-3.png" alt="IMG" />
+              <div className={styles.info_categorie}>
+                <h3>DESIGN</h3>
+              <p>0 Products</p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.categoria_item5}>
+            <div className="box_categorie">
+              <img src="https://app.teilur.com/wp-content/uploads/2022/03/icons8-python-100-2.png" alt="IMG" />
+              <div className={styles.info_categorie}>
+                <h3>SOFTWARE</h3>
+              <p>0 Products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {/* <p className={styles.explain}>
           Build an NFT marketplace using{" "}
           <b>
             {" "}
@@ -41,15 +88,15 @@ const Home: NextPage = () => {
           to list your ERC721 and ERC1155 tokens for auction or for direct sale.
         </p> */}
 
-        <hr className={styles.divider} />
+        {/* <hr className={styles.divider} /> */}
 
-        <div style={{ marginTop: 32, marginBottom: 32 }}>
+        {/* <div style={{ marginTop: 32, marginBottom: 32 }}>
           <Link href="/create">
             <a className={styles.mainButton} style={{ textDecoration: "none" }}>
               Create A Listing
             </a>
           </Link>
-        </div>
+        </div> */}
 
         <div className="main">
           {
